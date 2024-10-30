@@ -4,6 +4,7 @@ import { HomePage } from '../pages/Home';
 import { Layout } from './Layout';
 import { NotFoundPage } from '../pages/NotFound';
 import ClientPage from '../pages/clients/ClientPage';
+import ServicePage from '../pages/services/ServicePage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ClientPage />
+      </Layout>
+    ),
+  },
+  {
+    path: '/services',
+    element: (
+      <Layout>
+        <ServicePage />
       </Layout>
     ),
   },
