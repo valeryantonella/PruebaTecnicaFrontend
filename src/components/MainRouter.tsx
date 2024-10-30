@@ -2,6 +2,7 @@ import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { HomePage } from '../pages/Home';
 import { Layout } from './Layout';
+import { NotFoundPage } from '../pages/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -9,6 +10,11 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <HomePage />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <NotFoundPage />
       </Layout>
     ),
   },
