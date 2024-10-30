@@ -14,7 +14,7 @@ export const App = () => {
         fontFamily: 'sans-serif',
       }}
     >
-      Bienvenidos a BIT
+      <MainRouter />
     </Box>
   );
 };
